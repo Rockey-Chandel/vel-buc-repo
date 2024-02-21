@@ -19,7 +19,7 @@ jobs:
         node-version: '14' # specify the Node.js version you need
 
     - name: Install dependencies
-      run: npm install
+      uses: bahmutov/npm-install@v1
 
     - name: Build
       run: npm run build
