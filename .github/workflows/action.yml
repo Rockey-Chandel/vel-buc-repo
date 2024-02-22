@@ -12,17 +12,20 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: Configure AWS Credentials for China region audience
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        audience: sts.amazonaws.com.cn
+        aws-region: us-east-1
+        role-to-assume: arn:aws:iam::730335666747:role/aws-github-role 
       
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
         node-version: '14' # specify the Node.js version you need
 
-    - name: Install dependencies
-      uses: bahmutov/npm-install@v1
-
-    - name: Build
-      run: npm run build
+    
 
     
 
