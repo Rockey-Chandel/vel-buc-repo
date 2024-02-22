@@ -25,5 +25,5 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4 # More information on this action can be found below in the 'AWS Credentials' section
       with:
-        role-to-assume: arn:aws:iam::730335666747:role/aws-github-role
+        role-to-assume: arn:aws:iam::730335666747:role/My-aws-github-policy
         aws-region: ${{ env.AWS_REGION }}
