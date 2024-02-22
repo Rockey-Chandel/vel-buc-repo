@@ -23,10 +23,7 @@ jobs:
         aws-region: us-east-1
         role-to-assume: arn:aws:iam::730335666747:role/aws-github-role 
       
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14' # specify the Node.js version you need
+   
 
     
 
