@@ -1,18 +1,12 @@
-name: Deploy to Amazon ECS
+name: My workflow
 
 on:
   push:
-    branches: [ "ci","master" ]
+    branches:
+     - main
 
 env:
   AWS_REGION: us-east-2                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: equiplink-app           # set this to your Amazon ECR repository name
-  ECS_SERVICE: equiplink-app-svc                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: Equiplink-dev                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: .github/workflows/equiplink-app-modernization-dev-revision2.json # set this to the path to your Amazon ECS task definition
-                                               # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: equiplink-app           # set this to the name of the container in the
-                                               # containerDefinitions section of your task definition
 
 permissions:
   contents: read
