@@ -23,6 +23,6 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-             -Dsonar.organization=Rockey-Chandel
-             -Dsonar.projectKey=rockey-chandel
+              -Dsonar.organization=Rockey-Chandel
+              -Dsonar.projectKey=rockey-chandel
       
