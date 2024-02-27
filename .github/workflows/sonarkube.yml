@@ -21,8 +21,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-         with:
+        with:
           args: >
-            -Dsonar.organization=Rockey-Chandel
-            -Dsonar.projectKey=rockey-chandel
+             -Dsonar.organization=Rockey-Chandel
+             -Dsonar.projectKey=rockey-chandel
       
